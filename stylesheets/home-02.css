@@ -1,0 +1,16 @@
+.intro-bg{
+    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center; 
+    background-size: cover;
+}
+.ticker-container .ticker-emblem{
+	margin-bottom: 20px;
+}
+.ticker-container h2{
+	font-family: "Montserrat",sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 41px;
+    padding: 7px 7px 7px 15px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,17 @@
+
+.home-06-container h2 > span{
+    font-size: 18px;
+    line-height: 28px;
+    font-family:  "Raleway", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 4px;
+
+}
+
+.home-06-right-background{
+
+    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center; 
+    background-size: cover;
+}

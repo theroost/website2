@@ -282,6 +282,50 @@
 
     <div class="row">
           <article class="col-md-4 fullheight about-content silver-bg text-center">
+          </article>
+          <article class="col-md-8 about-content fullheight white-bg text-right hidden-sm">
+            <div class="valign">
+                <div id="contact-form-wrap" class="container">
+                          <div class="contact-item pad-common ">
+                            <div class="alert alert-error error " id="fname">
+                              <p>Name must not be empty</p>
+                            </div>
+                            <div class="alert alert-error  error" id="fmail">
+                              <p>Please provide a valid email</p>
+                            </div>
+                             <div class="alert alert-error  error" id="fmsg">
+                               <p>Message should not be empty</p>
+                             </div>
+                              <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post"> 
+                                <article>
+                                  <input type="text" placeholder="Your Name" id="name" name="name" size="100" class="border-form">
+                                </article>
+                                <article>
+                                   <input type="text" placeholder="Valid email ID" name="email" id="email" size="30" class="border-form">
+                                 </article>
+                                 <article>
+                                  <textarea placeholder="Your Message" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
+                                  <div class="btn-wrap  text-left">
+                                    <button class="btn btn-reflex btn-reflex-dark" id="submit" name="submit" type="submit">Send Message</button>
+                                  </div>
+                                </article>
+                             </form>
+                          </div>
+                    </div>
+
+            </div>
+          </article>
+                
+    </div>
+
+  </section>
+
+
+
+  <section class="about-container">
+
+    <div class="row">
+          <article class="col-md-4 fullheight about-content silver-bg text-center">
             <div class="valign">
                 <img src="roost/pin.png">
                 <br><br>
@@ -297,7 +341,6 @@
                 
     </div>
 
-
   </section>
 
 
@@ -311,7 +354,7 @@
   <div class="row">
           <article class="col-md-4 footer-column text-left white-bg">
               <h3 class="gothic">On Twitter</h3>
-              <a data-chrome="noheader nofooter noscrollbar noborders"  data-tweet-limit="1" class="twitter-timeline" href="https://twitter.com/theroost" data-widget-id="644101860689768448">Tweets by @theroost</a>
+              <a data-tweet-limit="1" data-chrome="noheader nofooter noscrollbar noborders"  class="twitter-timeline" href="https://twitter.com/theroost" data-widget-id="644137200964124672">Tweets by @theroost</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </article>
           <article class="col-md-4 footer-column text-center color-bg">

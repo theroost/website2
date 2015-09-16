@@ -10,3 +10,14 @@ h3.gothic {
 .mast-wrap {
     opacity: initial;
 }
+
+#contactForm input[type="radio"] {
+    width: auto;
+    margin: 0 1em 0 0;
+    padding: 0;
+}
+#contactForm .radio {
+    line-height: 50px;
+    text-align: left;
+    clear: both;
+}

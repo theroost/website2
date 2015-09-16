@@ -281,34 +281,36 @@
   <section class="about-container">
 
     <div class="row">
-          <article class="col-md-4 fullheight about-content silver-bg text-center">
+          <article class="col-md-4 fullheight about-content silver-bg text-center hidden-sm">
           </article>
-          <article class="col-md-8 about-content fullheight white-bg text-right hidden-sm">
+          <article class="col-md-8 about-content fullheight white-bg">
             <div class="valign">
                 <div id="contact-form-wrap" class="container">
-                          <div class="contact-item pad-common ">
-                            <div class="alert alert-error error " id="fname">
-                              <p>Name must not be empty</p>
-                            </div>
-                            <div class="alert alert-error  error" id="fmail">
-                              <p>Please provide a valid email</p>
-                            </div>
-                             <div class="alert alert-error  error" id="fmsg">
-                               <p>Message should not be empty</p>
-                             </div>
                               <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post"> 
                                 <article>
-                                  <input type="text" placeholder="Your Name" id="name" name="name" size="100" class="border-form">
+                                  <input type="text" placeholder="Name" id="name" name="name" size="100" class="border-form">
                                 </article>
                                 <article>
-                                   <input type="text" placeholder="Valid email ID" name="email" id="email" size="30" class="border-form">
+                                   <input type="text" placeholder="Email" name="email" id="email" size="30" class="border-form">
                                  </article>
                                  <article>
-                                  <textarea placeholder="Your Message" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
+                                    <input type="text" placeholder="Phone" name="phone" class="border-form">
+                                 </article>
+                                 <article>
+                                  <textarea placeholder="Tell Us About Yourself" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
+                                </article>
+                                 <article>
+                                    I am interested in:
+                                    <div class="radio">
+                                        <input type="radio"> Hotdesk membership
+                                    </div>
+                                    <div class="radio">
+                                        <input type="radio"> Workspace membership
+                                    </div>
                                   <div class="btn-wrap  text-left">
                                     <button class="btn btn-reflex btn-reflex-dark" id="submit" name="submit" type="submit">Send Message</button>
                                   </div>
-                                </article>
+                                 </article>
                              </form>
                           </div>
                     </div>

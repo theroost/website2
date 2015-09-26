@@ -9,6 +9,9 @@ h3.gothic {
     letter-spacing: initial;
     font-size: 2em;
 }
+.roost-header.our-rates {
+    font-size: 4em;
+}
 .roost-header {
     font-family: Oswald;
     letter-spacing: initial;

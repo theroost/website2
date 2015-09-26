@@ -285,32 +285,48 @@
           </article>
           <article class="col-md-8 about-content fullheight white-bg">
             <div class="valign">
+                <h2 class="roost-header">__&nbsp; Join Us</h2>
+                
                 <div id="contact-form-wrap" class="container">
-                              <form name="myform" id="contactForm" action="sendcontact.php" enctype="multipart/form-data" method="post"> 
+                              <form action="http://formspree.io/jwpage@gmail.com" id="contactForm" enctype="multipart/form-data" method="post"> 
                                 <article>
-                                  <input type="text" placeholder="Name" id="name" name="name" size="100" class="border-form">
+                                  <input required type="text" placeholder="Name" id="name" name="name" size="100" class="border-form">
                                 </article>
                                 <article>
-                                   <input type="text" placeholder="Email" name="email" id="email" size="30" class="border-form">
+                                   <input required type="text" placeholder="Email" id="email" name="email" size="30" class="border-form">
                                  </article>
                                  <article>
-                                    <input type="text" placeholder="Phone" name="phone" class="border-form">
+                                    <input required type="text" placeholder="Phone" id="phone" name="phone" class="border-form">
                                  </article>
                                  <article>
-                                  <textarea placeholder="Tell Us About Yourself" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
+                                  <textarea required placeholder="Tell Us About Yourself" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
                                 </article>
                                  <article>
-                                    I am interested in:
+                                    <br/>
+                                    <strong>I am interested in a:</strong>
                                     <div class="radio">
-                                        <input type="radio"> Hotdesk membership
+                                        <label>
+                                            <input required value="Hotdesk membership" name="membership" type="radio"> Hotdesk membership
+                                        </label>
                                     </div>
                                     <div class="radio">
-                                        <input type="radio"> Workspace membership
+                                        <label>
+                                            <input required value="Workspace membership" name="membership" type="radio"> Workspace membership
+                                        </label>
                                     </div>
+                                 </article>
+                                 <article>
+
                                   <div class="btn-wrap  text-left">
-                                    <button class="btn btn-reflex btn-reflex-dark" id="submit" name="submit" type="submit">Send Message</button>
+                                    <button class="btn btn-reflex btn-reflex-dark" id="submit" type="submit">Send Message</button>
                                   </div>
-                                 </article>
+                                </article>
+                                 
+                                 <input type="hidden" name="_subject" value="Roost Membership Enquiry">
+                                 <input name="_gotcha" style="display:none" />
+
+                                 <p class="alert alert-success success">Your message has been sent. Thank you!</p>
+                                 <p class="alert alert-danger error">We could not send your message. Please try again later.</p>
                              </form>
                           </div>
                     </div>
@@ -412,7 +428,6 @@
 <script src="javascripts/equalheights-init.js" ></script> 
 <script src="javascripts/hiding-nav.js"></script> 
 <script src="javascripts/parallax-init.js"></script> 
-<script src="javascripts/form-validation.js" ></script>
 <script src="javascripts/main.js" ></script> 
 
 <!-- Roosty -->

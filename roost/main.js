@@ -1,4 +1,35 @@
 (function() {
+    /** CONTACT **/
+    $('#contactForm .success, #contactForm .error').hide();
+    $('#contactForm').submit(function() {
+        $('#contactForm .success, #contactForm .error').hide();
+
+        $form = $(this); 
+        $.ajax({ 
+            url: $form.attr('action'),
+            method: $form.attr('method'),
+            data: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                phone: $('#phone').val(),
+                message: $('#message').val(),
+                membership: $form.find('[name=membership]:checked').val(),
+                _gotcha: $form.find('[name=_gotcha]').val(),
+                _subject: $form.find('[name=_subject]').val()
+            },
+            dataType: "json",
+            success: function() {
+                $form.find('.success').fadeIn();        
+            },
+            error: function() {
+                $form.find('.error').fadeIn();        
+            }
+        });
+
+        return false;
+    });
+
+    /** MAP **/
     var latLng = new google.maps.LatLng(-32.92692, 151.78138);
     var mapOptions = {
         zoom: 15,

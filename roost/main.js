@@ -3,6 +3,10 @@
     // http://bost.ocks.org/mike/shuffle/
     function shuffle(array) {
         var copy = [], n = array.length, i;
+
+        if (n == 0) {
+            return copy;
+        }
     
         // While there remain elements to shuffle…
         while (n) {
@@ -19,17 +23,29 @@
         return copy;
     }
 
-    var members = shuffle(window.roostMembers);
-    var html = ejs.render($('#members-template').html(), {members: members});
-    console.log(html);
-    $('.team-container').html(html);
+    function renderMembers(count) {
+        var members = shuffle(window.roostMembers.slice()).slice(0-count);
+        var html = ejs.render($('#members-template').html(), {members: members});
+        $('.team-container').html(html);
+        resizeThumbs();
+    }
     function resizeThumbs() {
         $('.team-thumb').each(function() {
             $(this).height($(this).width());
         });
+        $('.team-info').each(function() {
+            $(this).css('height', 'auto');
+        });
         $('.team-info, .team-thumb').setAllToMaxHeight();
     }
-    $(window).resize(resizeThumbs).resize();
+    $(window).resize(resizeThumbs);
+    var renderMembersRefresh = window.setInterval(function() {
+        $('.team-container').animate({'opacity': 0}, function () {
+            renderMembers(4);
+            $('.team-container').animate({'opacity': 1});
+        });
+    }, 4000);
+    renderMembers(4);
     
     /** JOIN US **/
     $('#contactForm .success, #contactForm .error').hide();

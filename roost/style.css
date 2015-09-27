@@ -29,6 +29,11 @@ h3.gothic {
 }
 
 /* CONTACT FORM */
+#join-us-img {
+    background: url(/roost/images/join-us.jpg);
+    background-size: cover;
+}
+
 #contactForm input[type="radio"] {
     width: auto;
     margin: 0 1em 0 0;
@@ -49,6 +54,10 @@ h3.gothic {
 }
 
 /* PRICING-TABLE */
+#pricing-table {
+    background: url(/roost/images/our-rates.jpg);
+    background-size: cover;
+}
 #pricing-table .panel {
     position: relative;
     border-radius: 0;
@@ -70,4 +79,9 @@ h3.gothic {
     left: 0;
     right: 0;
     bottom: 0;
+}
+#read-rules {
+    margin-top: 1em;
+    padding: 1em;
+    display: inline-block;
 }

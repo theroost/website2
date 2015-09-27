@@ -1,5 +1,5 @@
+/* GENERAL */
 /* Color: E30603 */
-
 .address {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -24,6 +24,7 @@ h3.gothic {
     opacity: initial;
 }
 
+/* CONTACT FORM */
 #contactForm input[type="radio"] {
     width: auto;
     margin: 0 1em 0 0;
@@ -41,4 +42,25 @@ h3.gothic {
     padding: 1em;
     margin-top: 1em;
     display: inline-block;
+}
+
+/* PRICING-TABLE */
+#pricing-table .panel {
+    position: relative;
+    border-radius: 0;
+    border: 0.2em solid #CCC;
+}
+#pricing-table .panel-heading {
+    padding-top: 1em;
+}
+#pricing-table .panel-body {
+    border-bottom: 0.2em solid #CCC;
+    margin: 0;
+    padding: 0;
+}
+#pricing-table .panel-footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

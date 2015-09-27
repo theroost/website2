@@ -48,4 +48,14 @@
         map: map,
         title: 'Snazzy!'
     });
+
+    /** PRICING TABLE **/
+    var height = 0;
+    var footerHeight = $('#pricing-table .panel-footer').outerHeight();
+    $('#pricing-table .panel').each(function() {
+        height = Math.max($(this).outerHeight(), height);
+        console.log(height);
+    });
+    console.log(footerHeight);
+    $('#pricing-table .panel').css('height', height + footerHeight + 'px');
 })();

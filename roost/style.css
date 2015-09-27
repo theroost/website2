@@ -68,6 +68,16 @@ h3.gothic {
 #pricing-table {
     background: url(/roost/images/our-rates.jpg);
     background-size: cover;
+    position: relative;
+}
+#pricing-table-inner {
+    position: absolute;
+    width: 16.6667%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #E30603;
+    opacity: 0.7;
 }
 #pricing-table .panel {
     position: relative;

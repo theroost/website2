@@ -1,19 +1,35 @@
 (function() {
     /** MEMBERS **/
-    var members = window.roostMembers;
-    var rows = [];
-    var row = [];
-    var isLeft = true;
-    members.forEach(function(member, i) {
-        if (i && i % 3 == 0) {
-            rows.push(row);
-            row = [];
-            isLeft = !isLeft;
+    // http://bost.ocks.org/mike/shuffle/
+    function shuffle(array) {
+        var copy = [], n = array.length, i;
+    
+        // While there remain elements to shuffle…
+        while (n) {
+            // Pick a remaining element…
+            i = Math.floor(Math.random() * array.length);
+    
+            // If not already shuffled, move it to the new array.
+            if (i in array) {
+                copy.push(array[i]);
+                delete array[i];
+                n--;
+            }
         }
+        return copy;
+    }
 
-        member.position = isLeft ? "left" : "right";
-        row.push(member);
-    });
+    var members = shuffle(window.roostMembers);
+    var html = ejs.render($('#members-template').html(), {members: members});
+    console.log(html);
+    $('.team-container').html(html);
+    function resizeThumbs() {
+        $('.team-thumb').each(function() {
+            $(this).height($(this).width());
+        });
+        $('.team-info, .team-thumb').setAllToMaxHeight();
+    }
+    $(window).resize(resizeThumbs).resize();
     
     /** JOIN US **/
     $('#contactForm .success, #contactForm .error').hide();

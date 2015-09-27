@@ -88,11 +88,11 @@ var roostMembers = [
     {
         "name": "Brett McDonald",
         "title": "Graphic Designer",
-        "url": " www.brettmcdonald.com.au"
+        "url": " http://www.brettmcdonald.com.au"
     },
     {
         "name": "Alexandra Morris",
-        "title": " Content Creator",
-        "url": "freelance writer http://www.coffeecavewoman.com"
+        "title": "Content Creator",
+        "url": "http://www.coffeecavewoman.com"
     }
 ];

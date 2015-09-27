@@ -12,7 +12,7 @@ $(function ($) {
 		    $('.equal-height').setAllToMaxHeight();
 		    $('.about-content-inner').setAllToMaxHeight();
 		    $('.service-item').setAllToMaxHeight();
-		    $('.team-info, .team-thumb').setAllToMaxHeight();
+		    //$('.team-info, .team-thumb').setAllToMaxHeight();
 		    $('.contact-content-inner').setAllToMaxHeight();
 		    $('.footer-column').setAllToMaxHeight();
 		    $('.about-content').setAllToMaxHeight();

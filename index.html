@@ -54,6 +54,41 @@
     <![endif]-->
 
 
+<script type="text/template" id="members-template">
+<% members.forEach(function(member, i) { %>
+    <% if (i % 2 == 0) { %>
+    <div class="row">
+    <% } %>
+          <% if (i % 4 / 2 < 1) { %>
+          <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
+             <img alt="" title="" class="img-responsive" src="http://placehold.it/750x750.jpg"/>
+          </article>
+          <% } %>
+          <article class="col-md-3 team-info white-bg text-center">
+             <% if (i % 4 / 2 < 1) { %>
+             <div class="triangle-arrow triangle-arrow-right"></div>
+             <% } else { %>
+             <div class="triangle-arrow triangle-arrow-left"></div>
+             <% } %>
+            <div class="valign">
+              <h3 class="sub-heading dark"><%= member.name %></h3>
+              <h6><span><%= member.title %></span></h6>
+              <% if (member.url) { %>
+              <a class="color" href="<%= member.url %>"><%= member.url %></a>
+              <% } %>
+            </div>
+          </article>
+          <% if (i % 4 /2 >= 1) { %>
+          <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
+             <img alt="" title="" class="img-responsive" src="http://placehold.it/750x750.jpg"/>
+          </article>
+          <% } %>
+    <% if (i % 2 == 1) { %>
+    </div>
+    <% } %>
+<% }); %>
+</script>
+
 </head>
 
 
@@ -263,6 +298,10 @@
                 </div>
   
 </section>
+
+<section class="team-container">
+</section>
+ 
 
 <section class="container color-bg text-center">
     <div class="row">
@@ -521,6 +560,7 @@
 <!-- Roosty -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeJ9721j4OcGKondJoHVug7VFgeg1ygx4&sensor=false"></script>
 <script src="roost/members.js"></script>
+<script src="roost/ejs.min.js"></script>
 <script src="roost/main.js"></script>
 
 </body>

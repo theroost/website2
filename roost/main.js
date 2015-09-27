@@ -1,4 +1,20 @@
 (function() {
+    /** MEMBERS **/
+    var members = window.roostMembers;
+    var rows = [];
+    var row = [];
+    var isLeft = true;
+    members.forEach(function(member, i) {
+        if (i && i % 3 == 0) {
+            rows.push(row);
+            row = [];
+            isLeft = !isLeft;
+        }
+
+        member.position = isLeft ? "left" : "right";
+        row.push(member);
+    });
+    
     /** JOIN US **/
     $('#contactForm .success, #contactForm .error').hide();
     $('#contactForm').submit(function() {
@@ -50,12 +66,16 @@
     });
 
     /** PRICING TABLE **/
-    var height = 0;
-    var footerHeight = $('#pricing-table .panel-footer').outerHeight();
-    $('#pricing-table .panel').each(function() {
-        height = Math.max($(this).outerHeight(), height);
-    });
-    $('#pricing-table .panel').css('height', height + footerHeight + 'px');
+    var resizePricing = function() {
+        var height = 0;
+        var footerHeight = $('#pricing-table .panel-footer').outerHeight();
+        $('#pricing-table .panel').each(function() {
+            $(this).css('height', '');
+            height = Math.max($(this).outerHeight(), height);
+        });
+        $('#pricing-table .panel').css('height', height + footerHeight + 'px');
+    };
+    $(window).resize(resizePricing).resize();
 
     /** SCROLL TO #ANCHOR LINKS **/
     $('a[href*=#]:not([href=#])').click(function() {

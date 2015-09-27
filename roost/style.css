@@ -79,6 +79,9 @@ h3.gothic {
     background: #E30603;
     opacity: 0.7;
 }
+#pricing-table .list-group-item {
+    padding: 2em 0;
+}
 #pricing-table .panel {
     position: relative;
     border-radius: 0;

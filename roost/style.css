@@ -28,10 +28,21 @@ h3.gothic {
     opacity: initial;
 }
 
-/* CONTACT FORM */
+/* JOIN US */
 #join-us-img {
     background: url(/roost/images/join-us.jpg);
     background-size: cover;
+    position: relative;
+}
+#join-us-inner {
+    background-color: #E30603;
+    opacity: 0.7;
+    height: 100%;
+    position: absolute;
+    top: -10vh;
+    z-index: 100;
+    left: 10vh;
+    right: -10vh;
 }
 
 #contactForm input[type="radio"] {

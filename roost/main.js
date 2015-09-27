@@ -1,5 +1,5 @@
 (function() {
-    /** CONTACT **/
+    /** JOIN US **/
     $('#contactForm .success, #contactForm .error').hide();
     $('#contactForm').submit(function() {
         $('#contactForm .success, #contactForm .error').hide();
@@ -54,11 +54,8 @@
     var footerHeight = $('#pricing-table .panel-footer').outerHeight();
     $('#pricing-table .panel').each(function() {
         height = Math.max($(this).outerHeight(), height);
-        console.log(height);
     });
-    console.log(footerHeight);
     $('#pricing-table .panel').css('height', height + footerHeight + 'px');
-
 
     /** SCROLL TO #ANCHOR LINKS **/
     $('a[href*=#]:not([href=#])').click(function() {

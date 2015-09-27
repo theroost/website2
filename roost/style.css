@@ -5,9 +5,13 @@
     line-height: 1.5;
 }
 h3.gothic { 
-    font-family: Oswald;
-    letter-spacing: initial;
     font-size: 2em;
+}
+.gothic {
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: initial;
+    font-weight: normal;
 }
 .roost-header.our-rates {
     font-size: 4em;
@@ -48,17 +52,20 @@ h3.gothic {
 #pricing-table .panel {
     position: relative;
     border-radius: 0;
-    border: 0.2em solid #CCC;
+    border: 0.3em solid #CCC;
 }
 #pricing-table .panel-heading {
-    padding-top: 1em;
+    padding-top: 3em;
 }
 #pricing-table .panel-body {
-    border-bottom: 0.2em solid #CCC;
+    border-bottom: 0.3em solid #CCC;
     margin: 0;
     padding: 0;
+    margin-bottom: 1em;
 }
 #pricing-table .panel-footer {
+    margin-top: 1em;
+    padding: 2em;
     position: absolute;
     left: 0;
     right: 0;

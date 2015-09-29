@@ -61,7 +61,7 @@
     <% } %>
           <% if (i % 4 / 2 < 1) { %>
           <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
-             <img alt="" title="" class="img-responsive" src="http://placehold.it/750x750.jpg"/>
+             <img alt="" title="" class="img-responsive" src="/roost/members/<%= member.name.replace(' ', '-').toLowerCase() %>.jpg"/>
           </article>
           <% } %>
           <article class="col-md-3 team-info white-bg text-center">
@@ -80,7 +80,7 @@
           </article>
           <% if (i % 4 /2 >= 1) { %>
           <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
-             <img alt="" title="" class="img-responsive" src="http://placehold.it/750x750.jpg"/>
+             <img alt="" title="" class="img-responsive" src="/roost/members/<%= member.name.replace(' ', '-').toLowerCase() %>.jpg"/>
           </article>
           <% } %>
     <% if (i % 2 == 1) { %>

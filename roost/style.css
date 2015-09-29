@@ -28,6 +28,17 @@ h3.gothic {
     opacity: initial;
 }
 
+/* MEMBERS */
+.team-info:hover {
+    background: #FFF !important;
+}
+.team-info:hover .triangle-arrow-left {
+    border-color:  transparent transparent transparent #FFF !important;
+}
+.team-info:hover .triangle-arrow-right {
+    border-color:  transparent #FFF transparent transparent !important;
+}
+
 /* JOIN US */
 #join-us-img {
     background: url(/roost/images/join-us.jpg);

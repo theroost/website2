@@ -28,6 +28,28 @@ h3.gothic {
     opacity: initial;
 }
 
+/* HEADER */
+.top-left {
+    background-image: url(/roost/images/top-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.top-right {
+    background-image: url(/roost/images/top-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.top-left-inner {
+    background-color: #E30603;
+    opacity: 0.7;
+    height: 125%;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+}
+
+
 /* ABOUT */
 .about-bg {
     background: url(/roost/images/about-bg.jpg);

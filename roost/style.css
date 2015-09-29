@@ -36,6 +36,9 @@ h3.gothic {
 }
 
 /* MEMBERS */
+.team-info h6 > span {
+    display: inline-block;
+}
 .team-info:hover {
     background: #FFF !important;
 }

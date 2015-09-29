@@ -120,3 +120,11 @@ h3.gothic {
     padding: 1em;
     display: inline-block;
 }
+
+/** MAP */
+.pin {
+    transition: all 0.2s;
+}
+.pin:hover {
+    opacity: 0.4;
+}

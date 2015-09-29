@@ -698,8 +698,6 @@ h1,h2,h3,h4,h5,h6{
 
 .about-bg{
     height: 100%;
-    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center; 
-    background-size: cover;
 }
 .service-item{
     background-position: center center;

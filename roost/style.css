@@ -122,9 +122,10 @@ h3.gothic {
 }
 
 /** MAP */
-.pin {
-    transition: all 0.2s;
+.address a {
+    color: inherit;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
-.pin:hover {
-    opacity: 0.4;
+.address a:hover {
+    opacity: 0.5;
 }

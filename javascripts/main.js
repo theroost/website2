@@ -26,6 +26,7 @@ $(function ($) {
 
 
     $('.fullheight').css('height',vH);
+    $('.halfheight').css('height',vH/2);
 
 
      //Adjusting Intro Components Spacing based on detected screen resolution

@@ -1,5 +1,8 @@
 /* GENERAL */
 /* Color: E30603 */
+.fullheight {
+    height: 100vh;
+}
 .address {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -8,7 +11,7 @@ h3.gothic {
     font-size: 2em;
 }
 .gothic {
-    font-family: Oswald;
+    font-family: Oswald !important;
     text-transform: uppercase;
     letter-spacing: initial;
     font-weight: normal;

@@ -25,12 +25,8 @@ $(function ($) {
      var fH = $('.sticky-foot').height();
 
 
-    $('.fullheight').css('height',vH);
-    $('.halfheight').css('height',vH/2);
-
-
      //Adjusting Intro Components Spacing based on detected screen resolution
-     $('#intro, .fullheight, .text-anim-container, .pace-running').css('height',vH);
+     $('#intro, .text-anim-container, .pace-running').css('height',vH);
     
 
     
@@ -46,28 +42,14 @@ $(function ($) {
 
 
     //Mobile Menu (multi level)
+    /*
     $('ul.slimmenu').slimmenu({
         resizeWidth: '1200',
         collapserTitle: 'menu',
         easingEffect:'easeInOutQuint',
         animSpeed:'medium',
     });
-
-
-
-
-    //TWITTER INIT (Updated with compatibility on Twitter's new API):
-    //PLEASE READ DOCUMENTATION FOR INFO ABOUT SETTING UP YOUR OWN TWITTER CREDENTIALS:
-    $(function ($) {
-              $('#tweet-ticker').tweet({
-                  modpath: './twitter/',
-                  count: 1,
-                  loading_text: 'loading twitter update...',
-                  username:'designovastudio'
-                  /* etc... */
-              });
-    }); 
-
+    */
 
     //Faded Page Loading
     /*! Fades out the whole page when clicking links */

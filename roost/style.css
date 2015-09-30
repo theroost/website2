@@ -54,7 +54,7 @@ h3.gothic {
 .about-bg {
     background: url(/roost/images/about-bg.jpg);
     background-size: cover;
-    background-position: bottom left;
+    background-position: bottom center;
 }
 
 /* MEMBERS */

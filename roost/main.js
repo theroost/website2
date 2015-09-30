@@ -60,7 +60,7 @@
                 name: $('#name').val(),
                 email: $('#email').val(),
                 phone: $('#phone').val(),
-                message: $('#message').val(),
+                message: $('#msg').val(),
                 membership: $form.find('[name=membership]:checked').val(),
                 _gotcha: $form.find('[name=_gotcha]').val(),
                 _subject: $form.find('[name=_subject]').val()

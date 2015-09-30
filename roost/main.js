@@ -26,16 +26,17 @@
     function renderMembers(count) {
         var members = shuffle(window.roostMembers.slice()).slice(0-count);
         var html = ejs.render($('#members-template').html(), {members: members});
-        $('.team-container').html(html);
+        var $teamContainer = $('.team-container');
+        $teamContainer.css('height', $teamContainer.outerHeight());
+        $teamContainer.html(html);
         resizeThumbs();
+        $teamContainer.css('height', 'auto');
+        $('.team-thumb img').imagesLoaded(function () {
+            resizeThumbs();
+        });
     }
     function resizeThumbs() {
-        $('.team-thumb').each(function() {
-            $(this).height($(this).width());
-        });
-        $('.team-info').each(function() {
-            $(this).css('height', 'auto');
-        });
+        $('.team-info, .team-thumb').css('height', 'auto');
         $('.team-info, .team-thumb').setAllToMaxHeight();
     }
     $(window).resize(resizeThumbs);
@@ -44,7 +45,7 @@
             renderMembers(4);
             $('.team-container').animate({'opacity': 1});
         });
-    }, 4000);
+    }, 400000);
     renderMembers(4);
     
     /** JOIN US **/
@@ -94,7 +95,7 @@
     var marker = new google.maps.Marker({
         position: latLng,
         map: map,
-        title: 'Snazzy!'
+        title: ''
     });
 
     /** PRICING TABLE **/

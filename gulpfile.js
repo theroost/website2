@@ -36,6 +36,7 @@ gulp.task('css', ['less'], function() {
 gulp.task('js', function () {
     var input = [
         'bootstrap/js/jquery.js',
+        'javascripts/imagesloaded.pkgd.min.js',
         'javascripts/jquery.easing.1.3.js',
         'bootstrap/js/bootstrap.js',
         'javascripts/device.min.js',
@@ -56,7 +57,6 @@ gulp.task('js', function () {
 
     return gulp.src(input)
         .pipe($.concat('main.js', {newLine: ';'}))
-        .pipe($.uglify())
         .pipe(gulp.dest(output))
         ;
 });

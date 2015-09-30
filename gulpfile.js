@@ -61,8 +61,9 @@ gulp.task('js', function () {
 
     return gulp.src(input)
         .pipe($.concat('main.js', {newLine: ';'}))
+        .pipe($.uglify())
         .pipe(gulp.dest(output))
         ;
 });
 
-gulp.task('default', ['less', 'css']);
+gulp.task('default', ['less', 'css', 'js']);

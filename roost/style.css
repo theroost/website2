@@ -31,7 +31,25 @@ h3.gothic {
     opacity: initial;
 }
 
-/* HEADER */
+/* TOP BAR */
+.top-header-left {
+    line-height: 70px;
+    padding: 0.2em;
+}
+.top-header-left img {
+    height: 50px;
+}
+.top-header-right {
+    padding: 0.2em;
+}
+.top-header-right h3 {
+    font-family: Oswald;
+    letter-spacing: initial;
+    font-size: 1.6em;
+    line-height: 70px;
+}
+
+/* HERO */
 .top-left {
     background-image: url(/roost/images/top-2.jpg);
     background-size: cover;

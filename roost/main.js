@@ -1,6 +1,6 @@
 (function() {
     /** HERO **/
-    $('.home-06-container h1 span').fitText();
+    $('.home-06-container h1 span').fitText().css('visibility', 'visible');
     $(window).resize(function() {
         var h = $('.home-06-container h1').height();
         $('.home-06-container h1').css('margin-top', 0-h/2);

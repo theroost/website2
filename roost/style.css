@@ -27,11 +27,14 @@ h3.gothic {
     padding-bottom: 1em;
     color: #E30603;
 }
-.mast-wrap {
-    opacity: initial;
+html, body, .mast-wrap {
+    opacity: initial !important;
 }
 
 /* TOP BAR */
+.top-header {
+    z-index: 102;
+}
 .top-header-left {
     line-height: 70px;
     padding: 0.2em;
@@ -63,6 +66,7 @@ h3.gothic {
 }
 .home-06-container h1 {
     position: absolute;
+    visibility: hidden;
     z-index: 101;
     color: #FFF;
     font-family: Oswald !important;

@@ -54,6 +54,32 @@ h3.gothic {
     background-image: url(/roost/images/top-2.jpg);
     background-size: cover;
     background-position: center center;
+    position: relative;
+}
+.home-06-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.home-06-container h1 {
+    position: absolute;
+    z-index: 101;
+    color: #FFF;
+    font-family: Oswald !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 100%;
+    top: 50%;
+}
+.home-06-container h1 span {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0.2em;
+
+    text-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+#tag__a-community {
 }
 .top-right {
     background-image: url(/roost/images/top-1.jpg);

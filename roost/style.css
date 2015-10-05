@@ -109,6 +109,12 @@ html, body, .mast-wrap {
 }
 
 /* MEMBERS */
+.team-container .row {
+    display: none;
+}
+.team-container .row:nth-of-type(2), .row:nth-of-type(1) {
+    display: block;
+}
 .team-info h6 > span {
     display: inline-block;
 }

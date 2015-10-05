@@ -30,8 +30,8 @@
         return copy;
     }
 
-    function renderMembers(count) {
-        var members = shuffle(window.roostMembers.slice()).slice(0-count);
+    function renderMembers() {
+        var members = shuffle(window.roostMembers.slice());
         var html = ejs.render($('#members-template').html(), {members: members});
         var $teamContainer = $('.team-container');
         $teamContainer.css('height', $teamContainer.outerHeight());
@@ -47,13 +47,13 @@
         $('.team-info, .team-thumb').setAllToMaxHeight();
     }
     $(window).resize(resizeThumbs);
-    var renderMembersRefresh = window.setInterval(function() {
-        $('.team-container').animate({'opacity': 0}, function () {
-            renderMembers(4);
-            $('.team-container').animate({'opacity': 1});
-        });
-    }, 400000);
-    renderMembers(4);
+    renderMembers();
+
+    $('#show-members').click(function() {
+        $('#show-members-container').slideUp(); 
+        $('.team-container .row').slideDown();
+        return false;
+    });
     
     /** JOIN US **/
     $('#contactForm .success, #contactForm .error').hide();

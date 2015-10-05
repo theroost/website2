@@ -50,6 +50,7 @@ gulp.task('js', function () {
         'javascripts/equalheights-init.js',
         'javascripts/main.js',
         'roost/members.js',
+        'roost/jquery.fittext.js',
         'roost/ejs.min.js',
         'roost/main.js',
     ];
@@ -59,6 +60,11 @@ gulp.task('js', function () {
         .pipe($.concat('main.js', {newLine: ';'}))
         .pipe(gulp.dest(output))
         ;
+});
+
+gulp.task('watch', function () {
+    gulp.watch(['javascripts/*.js', 'roost/*.js'], ['js']);
+    gulp.watch(['stylesheets/*.css', 'roost/*.css'], ['css']);
 });
 
 gulp.task('default', ['less', 'css', 'js']);

@@ -50,8 +50,8 @@
     renderMembers();
 
     $('#show-members').click(function() {
-        $('#show-members-container').slideUp(); 
-        $('.team-container .row').slideDown();
+        $('#show-members-container').slideUp(1000);
+        $('.team-container .row').slideDown(1000);
         return false;
     });
     

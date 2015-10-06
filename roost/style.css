@@ -222,3 +222,14 @@ html, body, .mast-wrap {
 .address a:hover {
     opacity: 0.5;
 }
+
+/** CREDITS */
+#credits-inner {
+    text-align: center;
+}
+#credits-inner h1 {
+    padding-top: 1em;
+}
+#credits-inner dt {
+    margin-top: 1em;
+}

@@ -65,26 +65,14 @@ html, body, .mast-wrap {
     height: 100vh;
 }
 .home-06-container h1 {
-    left: 0;
+    width: 50%;
+    height: 100%;
     position: absolute;
-    visibility: hidden;
     z-index: 101;
-    color: #FFF;
-    font-family: Oswald !important;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    width: 100%;
-    top: 50%;
-}
-.home-06-container h1 span {
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin: 0.2em;
-
-    text-shadow: 0 0 3px rgba(0,0,0,0.5);
-}
-#tag__a-community {
+    text-indent: -9999px;
+    left: 8.7%;
+    background: url(/roost/tagline.svg) no-repeat center center;
+    background-size: contain;
 }
 .top-right {
     background-image: url(/roost/images/top-1.jpg);

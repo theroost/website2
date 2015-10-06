@@ -1,11 +1,4 @@
 (function() {
-    /** HERO **/
-    $('.home-06-container h1 span').fitText(1.2).css('visibility', 'visible');
-    $(window).resize(function() {
-        var h = $('.home-06-container h1').height();
-        $('.home-06-container h1').css('margin-top', 0-h/2);
-    }).resize();
-
     /** MEMBERS **/
     // http://bost.ocks.org/mike/shuffle/
     function shuffle(array) {
@@ -50,8 +43,8 @@
     renderMembers();
 
     $('#show-members').click(function() {
-        $('#show-members-container').slideUp(1000);
-        $('.team-container .row').slideDown(1000);
+        $('#show-members-container').slideUp('slow');
+        $('.team-container .row').slideDown('slow');
         return false;
     });
     

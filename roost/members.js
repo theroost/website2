@@ -57,7 +57,7 @@ var roostMembers = [
         "url": "http://missingmouse.com/"
     },
     {
-        "name": "Justin Spaull",
+        "name": "Justin Aaron",
         "title": "Photographer",
         "url": "http://www.justinaaron.com.au/"
     },

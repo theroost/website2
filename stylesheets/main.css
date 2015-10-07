@@ -1,5 +1,5 @@
 @charset "utf-8";
-    
+
 /*MAIN.CSS*/
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 /*This is main CSS file that contains custom style rules used in this template*/
@@ -30,14 +30,14 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif; font-weight:300;
-    overflow-x:hidden; 
+    overflow-x:hidden;
 }
 
 a, a:hover, a:focus{
     text-decoration: none;
 }
-a:focus { 
-        outline: none; 
+a:focus {
+        outline: none;
 }
 .ease{
     -webkit-transition: all .4s ease-in-out;
@@ -103,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .nav-bg{
     height: 100%;
-    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center; 
+    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center;
     background-size: cover;
 }
 .main-nav-menu{
@@ -418,8 +418,8 @@ h1,h2,h3,h4,h5,h6{
     color: #4c4c4c;
 }
 .btn-reflex-dark:hover{
-    border:solid 1px #4c4c4c;
-    background: #4c4c4c;
+    border:solid 1px #E30603;
+    background: #E30603;
     color: #fff;
 }
 
@@ -467,7 +467,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 60px;
 }
 .page-head-bg{
-    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center; 
+    background: url('http://placehold.it/1500x1000.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -559,7 +559,7 @@ h1,h2,h3,h4,h5,h6{
 
 /*WORKS MASONRY*/
 .works-grid{
-            width: 100%; 
+            width: 100%;
             position: relative;
             font-size: 25px;
             font-family: 'Helvetica';
@@ -590,7 +590,7 @@ h1,h2,h3,h4,h5,h6{
                  -o-transition: all .4s ease-in-out;
                     transition: all .4s ease-in-out;
         }
-        .works-grid .box h3{ 
+        .works-grid .box h3{
             font-family: "Raleway",Arial,Helvetica,sans-serif;
             font-size: 20px;
             font-weight: 300;
@@ -599,7 +599,7 @@ h1,h2,h3,h4,h5,h6{
             text-transform: uppercase;
             margin-bottom: 10px;
         }
-        .works-grid .box p > span{  
+        .works-grid .box p > span{
             font-family: "Montserrat",Arial,Helvetica,sans-serif;
             font-size: 10px;
             font-weight: 300;
@@ -846,7 +846,7 @@ position: absolute;
  .news-item-inner{
     padding: 60px;
  }
-        .news-item h1{ 
+        .news-item h1{
             font-family: "Raleway",Arial,Helvetica,sans-serif;
             font-size: 24px;
             font-weight: 300;
@@ -856,7 +856,7 @@ position: absolute;
             margin-top: 20px;
             margin-bottom: 10px;
         }
-        .news-item h3{ 
+        .news-item h3{
             font-family: "Raleway",Arial,Helvetica,sans-serif;
             font-size: 14px;
             font-weight: 300;
@@ -866,7 +866,7 @@ position: absolute;
             margin-top: 20px;
             margin-bottom: 10px;
         }
-        .news-item p > span{  
+        .news-item p > span{
             font-family: "Montserrat",Arial,Helvetica,sans-serif;
             font-size: 10px;
             font-weight: 300;
@@ -932,7 +932,7 @@ position: absolute;
         .works-item-inner{
             text-align: center;
         }
-        .works-item-inner h3{ 
+        .works-item-inner h3{
             font-size: 16px;
             font-weight: 300;
             letter-spacing: 4px;
@@ -940,7 +940,7 @@ position: absolute;
             text-transform: uppercase;
             margin-bottom: 10px;
         }
-        .works-item-inner p > span{  
+        .works-item-inner p > span{
             font-size: 18px;
             font-weight: 200;
             line-height: 25px;

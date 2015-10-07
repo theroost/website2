@@ -43,8 +43,7 @@ var roostMembers = [
     },
     {
         "name": "Chris Stonestreet",
-        "title": "Creative Director",
-        "url": "http://thefluid.com.au"
+        "title": "Creative Director"
     },
     {
         "name": "Mark Owens",
@@ -67,7 +66,7 @@ var roostMembers = [
         "url": "http://mitchleephoto.com/"
     }
     //,
-   
+
     /*
     {
         "name": "Perlin Earth",

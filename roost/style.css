@@ -1,5 +1,9 @@
 /* GENERAL */
 /* Color: E30603 */
+p	{color: #121212;
+	font-family: "Raleway",Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:25px}
 .fullheight {
     height: 100vh;
 }
@@ -7,25 +11,57 @@
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
-h3.gothic { 
-    font-size: 2em;
+h3.gothic {
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
 }
 .gothic {
-    font-family: Oswald !important;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: initial;
     font-weight: normal;
+    font-size: 64px;
+    line-height: 50px;
+    font-weight: bold
 }
-.roost-header.our-rates {
-    font-size: 4em;
+.gothic span {
+	font-size: 40px;
+    line-height: 47px;
+    margin-right: 10px;
+    position: relative;
+    top: -7px;
+}
+.dark {
+    color: #121212;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -5px;
+    padding: 0 0 40px 0;
+}
+.roost-header.our-rates, .roost-header.our-members {
+    font-size: 3em;
+    padding-bottom: 1em;
+    text-indent: -134px;
+}
+.roost-header.our-members {
+	text-indent: -72px;
+}
+.roost-header span {
+    font-size: 1em;
+    font-weight: bold;
 }
 .roost-header {
     font-family: Oswald;
     letter-spacing: initial;
     font-size: 3em;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     padding-bottom: 1em;
     color: #E30603;
+    text-indent: -40px;
 }
 html, body, .mast-wrap {
     opacity: initial !important;
@@ -119,7 +155,15 @@ html, body, .mast-wrap {
 .team-info:hover .triangle-arrow-right {
     border-color:  transparent #FFF transparent transparent !important;
 }
-
+blockquote {
+	padding: 10px 20px;
+    margin: 0 0 20px -70px;
+    font-size: 35px;
+    font-family: Raleway,sans-serif;
+    color: #E30603;
+    text-transform: uppercase;
+    line-height: 1em;
+}
 /* JOIN US */
 #join-us-img {
     background: url(/roost/images/join-us.jpg);
@@ -129,17 +173,19 @@ html, body, .mast-wrap {
 #join-us-inner {
     background-color: #E30603;
     opacity: 0.7;
-    height: 100%;
+    height: 65%;
     position: absolute;
     top: -10vh;
     z-index: 100;
-    left: 10vh;
+    left: 0vh;
     right: -10vh;
 }
-
+#contactForm .roost-header {
+	margin-left: 50px;
+}
 #contactForm input[type="radio"] {
     width: auto;
-    margin: 0 1em 0 0;
+    margin: 0 1em 0 -20px;
     padding: 0;
     line-height: 25px !important;
     height: 25px !important;
@@ -148,12 +194,89 @@ html, body, .mast-wrap {
     line-height: 25px !important;
     text-align: left;
     clear: both;
+    margin-left:20px;
 }
 
 .success, .error {
     padding: 1em;
     margin-top: 1em;
     display: inline-block;
+}
+
+/*PRICING TABLES*/
+
+.pricing-head-01{
+    background: url('../images/bg/01.jpg') 50% 0 no-repeat fixed;
+}
+.pricing-head h3{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    line-height: 32px;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+.pricing-head h2{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 28px;
+    margin-bottom: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+.pricing-container .pricing-header.alt {
+    background: none repeat scroll 0 0 #BAA37A;
+}
+.pricing-container .pricing-header {
+    padding: 35px 0;
+    border: solid 8px;
+}
+.pricing-container .pricing-header h2 {
+    letter-spacing: 4px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.pricing-container .pricing-header .pricing p {
+    font-size: 64px;
+    line-height: 71px;
+    font-weight: 600;
+}
+.pricing-container .pricing-header .pricing p span {
+    font-size: 40px;
+    line-height: 47px;
+    margin-right: 10px;
+}
+.pricing-container .pricing-header h4 {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: -5px;
+}
+.pricing-container .pricing-features {
+    padding: 35px 0;
+    padding-top: 0;
+    border: solid 8px;
+    border-top: none;
+}
+.pricing-container .pricing-features .each h2 {
+    font-size: 12px;
+    line-height: 21px;
+    padding: 25px;
+    margin-bottom: 0;
+    border-bottom: solid 1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.pricing-container .pricing-features .each h2:last-child {
+    margin-bottom: 30px;
+}
+.pricing-container .pricing-features .custom-pricing-btn-style {
+    font-size: 12px !important;
+    padding: 12px 40px !important;
 }
 
 /* PRICING-TABLE */
@@ -174,6 +297,9 @@ html, body, .mast-wrap {
 #pricing-table .list-group-item {
     padding: 2em 0;
 }
+li.list-group-item.color {
+    border-bottom: none;
+}
 #pricing-table .panel {
     position: relative;
     border-radius: 0;
@@ -186,7 +312,6 @@ html, body, .mast-wrap {
     border-bottom: 0.3em solid #CCC;
     margin: 0;
     padding: 0;
-    margin-bottom: 1em;
 }
 #pricing-table .panel-footer {
     margin-top: 1em;
@@ -205,10 +330,9 @@ html, body, .mast-wrap {
 /** MAP */
 .address a {
     color: inherit;
-    border-bottom: 1px solid rgba(0,0,0,0.5);
 }
 .address a:hover {
-    opacity: 0.5;
+    color: #E30603;
 }
 
 /** CREDITS */

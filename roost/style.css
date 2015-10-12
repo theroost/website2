@@ -345,3 +345,19 @@ li.list-group-item.color {
 #credits-inner dt {
     margin-top: 1em;
 }
+
+.venobox .zoom-icon-wrap {
+    position: absolute;
+    background: url('../images/zoom.png') center center no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+.venobox:hover img {
+    opacity: 0.5;
+}
+.venobox:hover .zoom-icon-wrap {
+    opacity: 1;
+}

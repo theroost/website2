@@ -14,8 +14,7 @@ var roostMembers = [
     },
     {
         "name": "Andy Jones",
-        "title": "Video Production",
-        "url": " andy.jones93@gmail.com"
+        "title": "Video Production"
     },    {
         "name": "Stephen Roberts",
         "title": "Video Producer",
@@ -53,17 +52,17 @@ var roostMembers = [
     {
         "name": "Stephen Babic",
         "title": "Graphic Designer",
-        "url": "http://missingmouse.com/"
+        "url": "http://missingmouse.com"
     },
     {
         "name": "Justin Aaron",
         "title": "Photographer",
-        "url": "http://www.justinaaron.com.au/"
+        "url": "http://www.justinaaron.com.au"
     },
     {
         "name": "Mitch Lee",
         "title": "Portrait Photographer",
-        "url": "http://mitchleephoto.com/"
+        "url": "http://mitchleephoto.com"
     }
     //,
 
@@ -71,7 +70,7 @@ var roostMembers = [
     {
         "name": "Perlin Earth",
         "title": "Traveller",
-        "url": "http://perlinsadventureblog.com/"
+        "url": "http://perlinsadventureblog.com"
     },
     {
         "name": "Mark Tisdell",
@@ -89,7 +88,7 @@ var roostMembers = [
     {
         "name": "David Kidston",
         "title": "Architect",
-        "url": "http://www.hackarchitecture.com.au/"
+        "url": "http://www.hackarchitecture.com.au"
     }
     */
 ];

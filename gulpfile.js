@@ -50,7 +50,6 @@ gulp.task('js', function () {
         'javascripts/equalheights-init.js',
         'javascripts/main.js',
         'roost/members.js',
-        'roost/jquery.fittext.js',
         'roost/ejs.min.js',
         'roost/main.js',
     ];

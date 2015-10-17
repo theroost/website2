@@ -12,7 +12,6 @@ gulp.task('less', function() {
 gulp.task('css', ['less'], function() {
     var input = [
             'bootstrap/css/bootstrap.css',
-            'fonts/fonts.css',
             'stylesheets/hiding-nav.css',
             'stylesheets/menu-transition.css',
             'stylesheets/parallax-layers.css',

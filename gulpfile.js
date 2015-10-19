@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 gulp.task('less', function() {
     return gulp.src('less/color.less')
         .pipe($.less())
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('2015/build'))
         ;
 });
 
@@ -21,14 +21,14 @@ gulp.task('css', ['less'], function() {
             'stylesheets/main.css',
             'stylesheets/main-responsive.css',
             'stylesheets/main-retina.css',
-            'build/color.css',
+            '2015/build/color.css',
             'roost/style.css'
         ];
 
     return gulp.src(input)
         .pipe($.concat('style.css'))
         .pipe($.minifyCss())
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('2015/build'))
         ;
 });
 
@@ -52,7 +52,7 @@ gulp.task('js', function () {
         'roost/ejs.min.js',
         'roost/main.js',
     ];
-    var output = 'build';
+    var output = '2015/build';
 
     return gulp.src(input)
         .pipe($.concat('main.js', {newLine: ';'}))

@@ -90,7 +90,7 @@ html, body, .mast-wrap {
 
 /* HERO */
 .top-left {
-    background-image: url(/roost/images/top-2.jpg);
+    background-image: url(/2015/images/top-2.jpg);
     background-size: cover;
     background-position: center center;
     position: relative;
@@ -107,11 +107,11 @@ html, body, .mast-wrap {
     z-index: 101;
     text-indent: -9999px;
     left: 8.7%;
-    background: url(/roost/tagline.svg) no-repeat center center;
+    background: url(/2015/tagline.svg) no-repeat center center;
     background-size: contain;
 }
 .top-right {
-    background-image: url(/roost/images/top-1.jpg);
+    background-image: url(/2015/images/top-1.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -131,7 +131,7 @@ html, body, .mast-wrap {
 
 /* ABOUT */
 .about-bg {
-    background: url(/roost/images/about-bg.jpg);
+    background: url(/2015/images/about-bg.jpg);
     background-size: cover;
     background-position: bottom center;
 }
@@ -166,7 +166,7 @@ blockquote {
 }
 /* JOIN US */
 #join-us-img {
-    background: url(/roost/images/join-us.jpg);
+    background: url(/2015/images/join-us.jpg);
     background-size: cover;
     position: relative;
 }
@@ -281,7 +281,7 @@ blockquote {
 
 /* PRICING-TABLE */
 #pricing-table {
-    background: url(/roost/images/our-rates.jpg);
+    background: url(/2015/images/our-rates.jpg);
     background-size: cover;
     position: relative;
 }
@@ -348,7 +348,7 @@ li.list-group-item.color {
 
 .venobox .zoom-icon-wrap {
     position: absolute;
-    background: url('../images/zoom.png') center center no-repeat;
+    background: url('/2015/zoom.png') center center no-repeat;
     top: 0;
     bottom: 0;
     left: 0;

@@ -22,7 +22,7 @@ gulp.task('css', ['less'], function() {
             'stylesheets/main-responsive.css',
             'stylesheets/main-retina.css',
             '2015/build/color.css',
-            'roost/style.css'
+            '2015/style.css'
         ];
 
     return gulp.src(input)
@@ -48,9 +48,9 @@ gulp.task('js', function () {
         'javascripts/venobox-init.js',
         'javascripts/equalheights-init.js',
         'javascripts/main.js',
-        'roost/members.js',
-        'roost/ejs.min.js',
-        'roost/main.js',
+        '2015/members.js',
+        '2015/ejs.min.js',
+        '2015/main.js',
     ];
     var output = '2015/build';
 
@@ -61,8 +61,8 @@ gulp.task('js', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch(['javascripts/*.js', 'roost/*.js'], ['js']);
-    gulp.watch(['stylesheets/*.css', 'roost/*.css'], ['css']);
+    gulp.watch(['javascripts/*.js', '2015/*.js'], ['js']);
+    gulp.watch(['stylesheets/*.css', '2015/*.css'], ['css']);
 });
 
 gulp.task('default', ['less', 'css', 'js']);

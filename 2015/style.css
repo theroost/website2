@@ -348,7 +348,7 @@ li.list-group-item.color {
 
 .venobox .zoom-icon-wrap {
     position: absolute;
-    background: url('/2015/zoom.png') center center no-repeat;
+    background: url(/2015/zoom.png) center center no-repeat;
     top: 0;
     bottom: 0;
     left: 0;

@@ -1,9 +1,5 @@
 var roostMembers = [
     {
-        "name": "Rachael Ainsworth",
-        "title": "App Developer"
-    },
-    {
         "name": "Johnson Page",
         "title": "Web Application Developer"
     },

@@ -1,275 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-21821917-1']);
-    _gaq.push(['_trackPageview']);
+    <head>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-21821917-1']);
+            _gaq.push(['_trackPageview']);
 
-    (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-</script> 
-<meta charset="utf-8">
-<title>The Roost &mdash; A Community Of Independent Creatives</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+        </script> 
+        <meta charset="utf-8">
+        <title>The Roost &mdash; A Community Of Independent Creatives</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7COpen+Sans:400,300,700,800%7CMontserrat:400,700%7COswald:400,700' rel='stylesheet' type='text/css'>
-<link href="/2015/build/style.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900%7COpen+Sans:400,300,700,800%7CMontserrat:400,700%7COswald:400,700' rel='stylesheet' type='text/css'>
+        <link href="/2015/build/style.css" rel="stylesheet">
 
-<script src="/2015/modernizr.custom.js"></script>
-
-
-<script type="text/template" id="members-template">
-<% members.forEach(function(member, i) { %>
-    <% if (i % 2 == 0) { %>
-    <div class="row">
-    <% } %>
-          <% if (i % 4 / 2 < 1) { %>
-          <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
-             <img alt="" title="" class="img-responsive" src="/2015/members/<%= member.name.replace(' ', '-').toLowerCase() %>.jpg"/>
-          </article>
-          <% } %>
-          <article class="col-md-3 team-info white-bg text-center">
-             <% if (i % 4 / 2 < 1) { %>
-             <div class="triangle-arrow triangle-arrow-right"></div>
-             <% } else { %>
-             <div class="triangle-arrow triangle-arrow-left"></div>
-             <% } %>
-            <div class="valign">
-              <h3 class="sub-heading dark"><%= member.name %></h3>
-              <h6><span><%= member.title %></span></h6>
-              <% if (member.url) { %>
-              <a class="color" href="<%= member.url %>"><%= member.url %></a>
-              <% } %>
-            </div>
-          </article>
-          <% if (i % 4 /2 >= 1) { %>
-          <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
-             <img alt="" title="" class="img-responsive" src="/2015/members/<%= member.name.replace(' ', '-').toLowerCase() %>.jpg"/>
-          </article>
-          <% } %>
-    <% if (i % 2 == 1) { %>
-    </div>
-    <% } %>
-<% }); %>
-</script>
-
-</head>
+        <script src="/2015/modernizr.custom.js"></script>
 
 
-<body class="post">
-<section class="mast-wrap">
-
-
-
-
-
-
-<div id="wrap">
-
-
-
-
-<section class="top-header">
-
-  <div class="row">
-          <article class="top-header-left col-md-6 white-bg text-center">
-            <img src="/2015/roost-logo.svg">
-          </article>
-
-          <article class="top-header-right col-md-6 color-bg text-center visible-md visible-lg">
-           <h3 class="white">A Community Of Independent Creatives</h3>
-          </article>
-  </div>
-
-</section>
-
-<div id="content">
-
-<section class="container home-06-container text-center">
-                <h1 class="tagline">A Community Of Independent Creatives</h1>
-                <div class="row">
-                      <article class="fullheight top-left col-md-6 color-bg text-center">
-                        <div class="top-left-inner-md visible-md visible-lg"></div>
-                        <div class="top-left-inner-sm visible-xs visible-sm"></div>
-                      </article>
-                      <article class="fullheight top-right inner-pad col-md-6 white-bg text-left">
-                      </article>
-                </div>
-
-</section>
-
-<section class="about-container">
-
-<div class="row">
-
-      <article class="col-md-6 about-content about-bg text-right hidden-sm hidden-xs">
-
-      </article>
-      <article class="col-md-6 about-content silver-bg text-left">
-
-
+        <script type="text/template" id="members-template">
+        <% members.forEach(function(member, i) { %>
+            <% if (i % 2 == 0) { %>
             <div class="row">
-                  <article class="about-content-inner inner-pad col-md-12 white-bg text-left">
-                      <h3 class="roost-header">__ About<br/><span>The Roost</span></h3>
-<p>The Roost is a community of independent creative people sharing space and ideas. We
-work autonomously and also collaborate occasionally.</p>
-
-<p>We co-work and play out of an open-plan studio based in the heart of Hunter St Mall,
-Newcastle. We’re a mix of emerging creatives and established industry mentors. Among us
-are graphic designers, illustrators, marketing professionals, photographers, event planners,
-writers and others working in digital media.</p>
-
-<blockquote>
-We’re a mix of emerging creatives and established industry mentors.
-</blockquote>
-
-<p>As members, we use The Roost as a base for developing from graduates to professionals,
-starting and running our businesses, meeting clients, hosting events and making cool things
-happen as a result of joining forces. If you have a project that requires creative input,
-we’ve got a nest of talent.</p>
-
-<p>We’re not about being in competition; rather we’re committed to supporting the energy
-and inspiration of our local creative industry, providing avenues for professional
-development and supporting each other’s endeavours.</p>
-
-<p>Our doors are always open, so if you want to come and check out who’s around doing
-interesting things, talk to us or work with us, then please – <a href="#join-us">get in touch</a>.</p>
-                  </article>
+            <% } %>
+                
+                <% if (i % 4 / 2 < 1) { %>
+                <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
+                    <img alt="" title="" class="img-responsive" src="/2015/members/<%= member.name.replace(' ', '-').toLowerCase() %>.jpg"/>
+                </article>
+                <% } %>
+                <article class="col-md-3 team-info white-bg text-center">
+                    <% if (i % 4 / 2 < 1) { %>
+                    <div class="triangle-arrow triangle-arrow-right"></div>
+                    <% } else { %>
+                    <div class="triangle-arrow triangle-arrow-left"></div>
+                    <% } %>
+                    <div class="valign">
+                        <h3 class="sub-heading dark"><%= member.name %></h3>
+                        <h6><span><%= member.title %></span></h6>
+                        <% if (member.url) { %>
+                        <a class="color" href="<%= member.url %>"><%= member.url %></a>
+                        <% } %>
+                    </div>
+                </article>
+                <% if (i % 4 /2 >= 1) { %>
+                <article class="col-md-3 no-gutter team-thumb silver-bg text-center">
+                    <img alt="" title="" class="img-responsive" src="/2015/members/<%= member.name.replace(' ', '-').toLowerCase() %>.jpg"/>
+                </article>
+                <% } %>
+            <% if (i % 2 == 1) { %>
             </div>
-      </article>
-</div>
+            <% } %>
+        <% }); %>
+        </script>
+    </head>
 
 
-</section>
+    <body class="post">
+        <section class="mast-wrap">
+            <div id="wrap">
+                <!-- Sticky header -->
+                <section class="top-header">
+                    <div class="row">
+                        <article class="top-header-left col-md-6 white-bg text-center">
+                            <img src="/2015/roost-logo.svg" alt="The Roost">
+                        </article>
+
+                        <article class="top-header-right col-md-6 color-bg text-center visible-md visible-lg">
+                            <h3 class="white">A Community Of Independent Creatives</h3>
+                        </article>
+                    </div>
+                </section>
+
+                <div id="content">
+                    <!-- Hero -->
+                    <section class="container home-06-container text-center">
+                        <h1 class="tagline">A Community Of Independent Creatives</h1>
+                        <div class="row">
+                            <article class="fullheight top-left col-md-6 color-bg text-center">
+                                <div class="top-left-inner-md visible-md visible-lg"></div>
+                                <div class="top-left-inner-sm visible-xs visible-sm"></div>
+                            </article>
+                            <article class="fullheight top-right inner-pad col-md-6 white-bg text-left">
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- About Us -->
+                    <section class="about-container">
+                        <div class="row">
+                            <article class="col-md-6 about-content about-bg text-right hidden-sm hidden-xs">
+                            </article>
+                            <article class="col-md-6 about-content silver-bg text-left">
+                                <div class="row">
+                                    <article class="about-content-inner inner-pad col-md-12 white-bg text-left">
+                                        <h3 class="roost-header">__ About<br/><span>The Roost</span></h3>
+                                        <p>The Roost is a community of independent creative people sharing space and ideas. We
+                                        work autonomously and also collaborate occasionally.</p>
+
+                                        <p>We co-work and play out of an open-plan studio based in the heart of Hunter St Mall,
+                                        Newcastle. We’re a mix of emerging creatives and established industry mentors. Among us
+                                        are graphic designers, illustrators, marketing professionals, photographers, event planners,
+                                        writers and others working in digital media.</p>
+
+                                        <blockquote>
+                                            We’re a mix of emerging creatives and established industry mentors.
+                                        </blockquote>
+
+                                        <p>As members, we use The Roost as a base for developing from graduates to professionals,
+                                        starting and running our businesses, meeting clients, hosting events and making cool things
+                                        happen as a result of joining forces. If you have a project that requires creative input,
+                                        we’ve got a nest of talent.</p>
+
+                                        <p>We’re not about being in competition; rather we’re committed to supporting the energy
+                                        and inspiration of our local creative industry, providing avenues for professional
+                                        development and supporting each other’s endeavours.</p>
+
+                                        <p>Our doors are always open, so if you want to come and check out who’s around doing
+                                        interesting things, talk to us or work with us, then please – <a href="#join-us">get in touch</a>.</p>
+                                    </article>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Lightbox Gallery -->
+                    <section class="container white-bg">
+                        <article class="col-md-3 no-gutter silver-bg text-center">
+                            <a href="/2015/images/about-1.jpg" class="venobox" data-gall="about">
+                                <img alt="" title="" class="img-responsive" src="/2015/images/about-1.jpg"/>
+                                <div class="zoom-icon-wrap"></div>
+                            </a>
+                        </article>
+                        <article class="col-md-3 no-gutter silver-bg text-center">
+                            <a href="/2015/images/about-2.jpg" class="venobox" data-gall="about">
+                                <img alt="" title="" class="img-responsive" src="/2015/images/about-2.jpg"/>
+                                <div class="zoom-icon-wrap"></div>
+                            </a>
+                        </article>
+                        <article class="col-md-3 no-gutter silver-bg text-center">
+                            <a href="/2015/images/about-3.jpg" class="venobox" data-gall="about">
+                                <img alt="" title="" class="img-responsive" src="/2015/images/about-3.jpg"/>
+                                <div class="zoom-icon-wrap"></div>
+                            </a>
+                        </article>
+                        <article class="col-md-3 no-gutter silver-bg text-center">
+                            <a href="/2015/images/about-4.jpg" class="venobox" data-gall="about">
+                                <img alt="" title="" class="img-responsive" src="/2015/images/about-4.jpg"/>
+                                <div class="zoom-icon-wrap"></div>
+                            </a>
+                        </article>
+                    </section>
+
+                    <!-- Our Members Heading -->
+                    <section class="container white-bg text-center">
+                        <div class="row">
+                            <article class="col-md-12 team-job text-center pad-top-half pad-bottom-half">
+                                <h2 class="roost-header our-rates">
+                                    __ Our<br/><span>Members</span>
+                                </h2>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Our Members Profile Images -->
+                    <section class="team-container">
+                    </section>
 
 
+                    <!-- More Members -->
+                    <section class="container color-bg text-center" id="show-members-container">
+                        <div class="row">
+                            <article class="col-md-12 team-job text-center pad-top-half pad-bottom-half">
+                                <h3 class="main-heading white">
+                                    Want to view more members?
+                                </h3>
+                                <div class="trigger-button add-top-quarter">
+                                    <a class="btn btn-reflex btn-reflex-white" href="#" id="show-members">Yes, Please</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
 
-<section class="container white-bg">
-      <article class="col-md-3 no-gutter silver-bg text-center">
-         <a href="/2015/images/about-1.jpg" class="venobox" data-gall="about">
-         <img alt="" title="" class="img-responsive" src="/2015/images/about-1.jpg"/>
-         <div class="zoom-icon-wrap"></div>
-         </a>
-      </article>
-      <article class="col-md-3 no-gutter silver-bg text-center">
-         <a href="/2015/images/about-2.jpg" class="venobox" data-gall="about">
-         <img alt="" title="" class="img-responsive" src="/2015/images/about-2.jpg"/>
-         <div class="zoom-icon-wrap"></div>
-         </a>
-      </article>
-      <article class="col-md-3 no-gutter silver-bg text-center">
-         <a href="/2015/images/about-3.jpg" class="venobox" data-gall="about">
-         <img alt="" title="" class="img-responsive" src="/2015/images/about-3.jpg"/>
-         <div class="zoom-icon-wrap"></div>
-         </a>
-      </article>
-      <article class="col-md-3 no-gutter silver-bg text-center">
-         <a href="/2015/images/about-4.jpg" class="venobox" data-gall="about">
-         <img alt="" title="" class="img-responsive" src="/2015/images/about-4.jpg"/>
-         <div class="zoom-icon-wrap"></div>
-         </a>
-      </article>
-</section>
+                    <!-- Our Rates Heading -->
+                    <section class="container white-bg text-center">
+                        <div class="row">
+                            <article class="col-md-12 team-job text-center pad-top-half pad-bottom-half">
+                                <h2 class="roost-header our-members">
+                                    __ Our<br/><span>Rates</span>
+                                </h2>
+                                <h3 class="main-heading grey">
+                                    Whatever your creative space needs,<br>
+                                    we have you covered
+                                </h3>
+                            </article>
+                        </div>
+                    </section>
 
-
-
-<section class="container white-bg text-center">
-
-  <div class="row">
-
-          <article class="col-md-12 team-job text-center pad-top-half pad-bottom-half">
-              <h2 class="roost-header our-rates">
-                    __ Our<br/><span>Members</span>
-              </h2>
-          </article>
-    </div>
-
-</section>
-
-
-
-<section class="team-container">
-</section>
-
-
-<section class="container color-bg text-center" id="show-members-container">
-    <div class="row">
-        <article class="col-md-12 team-job text-center pad-top-half pad-bottom-half">
-            <h3 class="main-heading white">
-                Want to view more members?
-            </h3>
-            <div class="trigger-button add-top-quarter">
-                <a class="btn btn-reflex btn-reflex-white" href="#" id="show-members">Yes, Please</a>
-            </div>
-
-        </article>
-    </div>
-</section>
-
-<section class="container white-bg text-center">
-
-  <div class="row">
-
-          <article class="col-md-12 team-job text-center pad-top-half pad-bottom-half">
-              <h2 class="roost-header our-members">
-                    __ Our<br/><span>Rates</span>
-              </h2>
-              <h3 class="main-heading grey">
-              Whatever your creative space needs,<br>
-              we have you covered
-              </h3>
-          </article>
-    </div>
-
-</section>
-
-<section class="container grey-bg text-center" id="pricing-table">
-    <div class="row pad-top pad-bottom">
-        <div id="pricing-table-inner"></div>
-        <br/>
-                <div class="col-md-3 col-md-offset-3">
-                        <div class="panel">
-                                <div class="panel-heading text-center">
+                    <!-- Pricing Table -->
+                    <section class="container grey-bg text-center" id="pricing-table">
+                        <div class="row pad-top pad-bottom">
+                            <div id="pricing-table-inner"></div>
+                            <br/>
+                            <div class="col-md-3 col-md-offset-3">
+                                <div class="panel">
+                                    <div class="panel-heading text-center">
                                         <h3 class="gothic">Hotdesk</h3>
-                                </div>
-                                <div class="panel-body text-center">
-                                        <p class="lead gothic"><span>$</span>80<span></p>
+                                    </div>
+                                    <div class="panel-body text-center">
+                                        <p class="lead gothic"><span>$</span>80</p>
                                         <h4 class="dark">per month</h4>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
+                                    </div>
+
+                                    <ul class="list-group list-group-flush text-center">
                                         <li class="list-group-item">
-                                                A designated temporary work desk &amp; chair
+                                            A designated temporary work desk &amp; chair
                                         </li>
                                         <li class="list-group-item">
-                                                BYO laptop/smart device equipment each day<br>
-                                                Take your equipment home each day
+                                            BYO laptop/smart device equipment each day<br>
+                                            Take your equipment home each day
                                         </li>
                                         <li class="list-group-item">
-                                                9&ndash;5, Monday&ndash;Friday Access
+                                            9&ndash;5, Monday&ndash;Friday Access
                                         </li>
                                         <li class="list-group-item">
                                             Two month maximum
                                         </li>
-                                </ul>
-                                <div class="panel-footer">
-                                    <a class="btn btn-reflex btn-reflex-dark white-bg" href="#join-us">Join Us</a>
+                                    </ul>
+                                    <div class="panel-footer">
+                                        <a class="btn btn-reflex btn-reflex-dark white-bg" href="#join-us">Join Us</a>
+                                    </div>
                                 </div>
-                        </div>
-                </div>
-                <div class="col-md-3">
-                        <div class="panel">
-                                <div class="panel-heading">
+                            </div>
+                            <div class="col-md-3">
+                                <div class="panel">
+                                    <div class="panel-heading">
                                         <h3 class="gothic">Workspace</h3>
-                                </div>
-                                <div class="panel-body text-center">
-                                        <p class="lead gothic"><span>$</span>140<span></p>
+                                    </div>
+                                    <div class="panel-body text-center">
+                                        <p class="lead gothic"><span>$</span>140</p>
                                         <h4 class="dark">per month</h4>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
+                                    </div>
+                                    <ul class="list-group list-group-flush text-center">
                                         <li class="list-group-item white color-bg">
                                             Only $80/month for <br>students and recent grads!
                                         </li>
@@ -277,194 +253,173 @@ interesting things, talk to us or work with us, then please – <a href="#join-u
                                             Your very own 2m x 1.5m workspace
                                         </li>
                                         <li class="list-group-item">
-                                                Desk &amp; chair supplied or bring your own
+                                            Desk &amp; chair supplied or bring your own
                                         </li>
                                         <li class="list-group-item">
-                                                9&ndash;5, Monday&ndash;Friday Access<br/>
-                                                After-Hours Access On Request
+                                            9&ndash;5, Monday&ndash;Friday Access<br/>
+                                            After-Hours Access On Request
                                         </li>
                                         <li class="list-group-item">
                                             Two months or more
                                         </li>
-                                </ul>
-                                <div class="panel-footer">
-                                    <a class="btn btn-reflex btn-reflex-dark white-bg" href="#join-us">Join Us</a>
+                                    </ul>
+                                    <div class="panel-footer">
+                                        <a class="btn btn-reflex btn-reflex-dark white-bg" href="#join-us">Join Us</a>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-md-12">
+                                <a id="read-rules" class="color white-bg pad" href="/2015/rules-and-regulations.pdf" target="_blank">Read our full Rules &amp; Regulations</a>
+                            </div>
                         </div>
-                </div>
-                <div class="col-md-12">
-                    <a id="read-rules" class="color white-bg pad" href="/2015/rules-and-regulations.pdf" target="_blank">Read our full Rules &amp; Regulations</a>
-                </div>
-    </div>
+                    </section>
 
-</section>
+                    <!-- Join Us Form -->
+                    <section class="about-container" id="join-us">
+                        <div class="row">
+                            <article id="join-us-img" class="col-md-4 fullheight about-content silver-bg text-center hidden-sm hidden-xs">
+                                <div id="join-us-inner"></div>
+                            </article>
+                            <article class="col-md-1  fullheight white-bg hidden-sm hidden-xs">
+                            </article>
+                            <article class="col-md-6 about-content fullheight white-bg">
+                                <div class="valign">
+                                    <h2 class="roost-header">
+                                        __ Join<br/><span>Us</span>
+                                    </h2>
+    
+                                    <div id="contact-form-wrap" class="container">
+                                        <form action="http://formspree.io/info@theroostcreative.com.au" id="contactForm" enctype="multipart/form-data" method="post">
+                                            <article>
+                                                <input required type="text" placeholder="Name" id="name" name="name" size="100" class="border-form">
+                                            </article>
+                                            <article>
+                                                <input required type="text" placeholder="Email" id="email" name="email" size="30" class="border-form">
+                                            </article>
+                                            <article>
+                                                <input required type="text" placeholder="Phone" id="phone" name="phone" class="border-form">
+                                            </article>
+                                            <article>
+                                                <textarea required placeholder="Tell Us About Yourself" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
+                                            </article>
+                                            <article>
+                                                <br/>
+                                                <strong>I am interested in a:</strong>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input required value="Hotdesk membership" name="membership" type="radio"> Hotdesk membership
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input required value="Workspace membership" name="membership" type="radio"> Workspace membership
+                                                    </label>
+                                                </div>
+                                            </article>
+                                            <article>
+                                                <div class="btn-wrap  text-left">
+                                                    <button class="btn btn-reflex btn-reflex-dark" id="submit" type="submit">Send Message</button>
+                                                </div>
+                                            </article>
+                                            <input type="hidden" name="_subject" value="Roost Membership Enquiry">
+                                            <input name="_gotcha" style="display:none">
 
-  <section class="about-container">
-    <a href="" name="join-us"></a>
-
-    <div class="row">
-          <article id="join-us-img" class="col-md-4 fullheight about-content silver-bg text-center hidden-sm hidden-xs">
-              <div id="join-us-inner"></div>
-          </article>
-          <article class="col-md-1  fullheight white-bg hidden-sm hidden-xs">
-          </article>
-          <article class="col-md-6 about-content fullheight white-bg">
-            <div class="valign">
-                <h2 class="roost-header">
-                __ Join<br/><span>Us</span>
-                </h2>
-
-                <div id="contact-form-wrap" class="container">
-                              <form action="http://formspree.io/info@theroostcreative.com.au" id="contactForm" enctype="multipart/form-data" method="post">
-                                <article>
-                                  <input required type="text" placeholder="Name" id="name" name="name" size="100" class="border-form">
-                                </article>
-                                <article>
-                                   <input required type="text" placeholder="Email" id="email" name="email" size="30" class="border-form">
-                                 </article>
-                                 <article>
-                                    <input required type="text" placeholder="Phone" id="phone" name="phone" class="border-form">
-                                 </article>
-                                 <article>
-                                  <textarea required placeholder="Tell Us About Yourself" name="message" cols="40" rows="3" id="msg" class="border-form"></textarea>
-                                </article>
-                                 <article>
-                                    <br/>
-                                    <strong>I am interested in a:</strong>
-                                    <div class="radio">
-                                        <label>
-                                            <input required value="Hotdesk membership" name="membership" type="radio"> Hotdesk membership
-                                        </label>
+                                            <p class="alert alert-success success">Your message has been sent. Thank you!</p>
+                                            <p class="alert alert-danger error">We could not send your message. Please try again later.</p>
+                                        </form>
                                     </div>
-                                    <div class="radio">
-                                        <label>
-                                            <input required value="Workspace membership" name="membership" type="radio"> Workspace membership
-                                        </label>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+
+                    <!-- Map -->
+                    <section>
+                        <div class="row">
+                            <article class="col-md-4 fullheight silver-bg text-center">
+                                <div class="valign">
+                                    <img src="/2015/pin.svg" width="54" height="77" alt="">
+                                    <br><br>
+                                    <h2 class="address">
+                                        <a href="https://www.google.com.au/maps/place/The+Roost+-+Creative/@-32.9268094,151.7805403,17z/data=!3m1!4b1!4m2!3m1!1s0x6b731464e5e6a031:0x54de0564292557fc" target="_blank">
+                                            Level 1, 152&ndash;160<br>
+                                            Hunter Street<br>
+                                            Newcastle, 2300
+                                        </a>
+                                    </h2>
+                                </div>
+                            </article>
+                            <article class="col-md-8 fullheight text-right hidden-sm hidden-xs" id="map">
+                            </article>
+                        </div>
+                    </section>
+                </div><!-- /#content -->
+
+                <footer class="container master-footer">
+                    <div class="row">
+                        <article class="col-md-4 footer-column text-left white-bg">
+                            <h3 class="gothic">On Twitter</h3>
+                            <a data-tweet-limit="1" data-chrome="noheader nofooter noscrollbar noborders"  class="twitter-timeline" href="https://twitter.com/theroost" data-widget-id="644137200964124672">Tweets by @theroost</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </article>
+                        <article class="col-md-4 footer-column text-center color-bg">
+                            <div class="valign">
+                                <img alt="" title="" class="main-logo" src="/2015/footer-rooster.svg" height="80" width="61" />
+                                <br><br>
+                                <p class="white">
+                                    Copyright &copy; The Roost Creative Pty Ltd
+                                    <br>
+                                    <a href="#credits" class="white venobox" data-type="inline">Site Credits</a>
+                                </p>
+                                <div style="display: none" id="credits">
+                                    <div class="credits-inner">
+                                        <h1 class="roost-header">__ Credits</h1>
+                                        <dl>
+                                            <dt>Website Design</dt>
+                                            <dd>Chris Stonestreet</dd>
+
+                                            <dt>Website Development</dt>
+                                            <dd>Johnson Page</dd>
+                                            <dd>Adrian Garner</dd>
+
+                                            <dt>Photography</dt>
+                                            <dd>Justin Spaull</dd>
+                                            <dd>Mitch Lee</dd>
+
+                                            <dt>Copywriting</dt>
+                                            <dd>Bec Dujin</dd>
+
+                                            <dt>Rooster Icon</dt>
+                                            <dd><a href="https://thenounproject.com/term/rooster/42413/">The Noun Project/Yair Cohen</a></dd>
+
+                                            <dt>Map Marker</dt>
+                                            <dd><a href="https://thenounproject.com/search/?q=map+pin&amp;i=33103/">The Noun Project/Mister Pixel</a></dd>
+                                        </dl>
                                     </div>
-                                 </article>
-                                 <article>
-
-                                  <div class="btn-wrap  text-left">
-                                    <button class="btn btn-reflex btn-reflex-dark" id="submit" type="submit">Send Message</button>
-                                  </div>
-                                </article>
-
-                                 <input type="hidden" name="_subject" value="Roost Membership Enquiry">
-                                 <input name="_gotcha" style="display:none">
-
-                                 <p class="alert alert-success success">Your message has been sent. Thank you!</p>
-                                 <p class="alert alert-danger error">We could not send your message. Please try again later.</p>
-                             </form>
-                          </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 footer-column text-left white-bg">
+                            <h3 class="gothic">Connect With Us</h3>
+                            <ul class="foot-links">
+                                <li><a href="https://twitter.com/theroost"><span>Twitter</span></a></li>
+                                <li><a href="https://medium.com/what-the-cluck"><span>Blog</span></a></li>
+                                <li><a href="https://instagram.com/theroostcreative"><span>Instagram</span></a></li>
+                                <li><a href="https://www.facebook.com/The-Roost-Creative-165840163448967/timeline/"><span>Facebook</span></a></li>
+                                <li><a href="mailto:info@theroostcreative.com.au"><span>Email</span></a></li>
+                                <li><a href="tel:0249293007"><span>(02) 4929 3007</span></a></li>
+                            </ul>
+                        </article>
                     </div>
-
+                </footer>
             </div>
-          </article>
+            <!-- end wrap -->
+        </section>
+        <!-- end mast-wrap -->
 
-    </div>
-
-  </section>
-
-
-
-  <section>
-
-    <div class="row">
-          <article class="col-md-4 fullheight silver-bg text-center">
-            <div class="valign">
-                <img src="/2015/pin.svg" width="54" height="77">
-                <br><br>
-                <h2 class="address">
-                    <a href="https://www.google.com.au/maps/place/The+Roost+-+Creative/@-32.9268094,151.7805403,17z/data=!3m1!4b1!4m2!3m1!1s0x6b731464e5e6a031:0x54de0564292557fc" target="_blank">
-                    Level 1, 152&ndash;160<br>
-                    Hunter Street<br>
-                    Newcastle, 2300
-                    </a>
-                </h2>
-            </div>
-          </article>
-          <article class="col-md-8 fullheight text-right hidden-sm hidden-xs" id="map">
-          </article>
-    </div>
-
-  </section>
-
-
-</div>
-<!-- end content -->
-
-
-
-
-<footer class="container master-footer">
-  <div class="row">
-          <article class="col-md-4 footer-column text-left white-bg">
-              <h3 class="gothic">On Twitter</h3>
-              <a data-tweet-limit="1" data-chrome="noheader nofooter noscrollbar noborders"  class="twitter-timeline" href="https://twitter.com/theroost" data-widget-id="644137200964124672">Tweets by @theroost</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </article>
-          <article class="col-md-4 footer-column text-center color-bg">
-            <div class="valign">
-              <img alt="" title="" class="main-logo" src="/2015/footer-rooster.svg" height="80" width="61" />
-              <br><br>
-              <p class="white">
-                Copyright &copy; The Roost Creative Pty Ltd
-                <br>
-                <a href="#credits" class="white venobox" data-type="inline">Site Credits</a>
-                <div style="display: none" id="credits">
-                    <dl id="credits-inner">
-                        <h1 class="roost-header">__ Credits</h1>
-
-                        <dt>Website Design</dt>
-                        <dd>Chris Stonestreet</dd>
-
-                        <dt>Website Development</dt>
-                        <dd>Johnson Page</dd>
-                        <dd>Adrian Garner</dd>
-
-                        <dt>Photography</dt>
-                        <dd>Justin Spaull</dd>
-                        <dd>Mitch Lee</dd>
-
-                        <dt>Copywriting</dt>
-                        <dd>Bec Dujin</dd>
-
-                        <dt>Rooster Icon</dt>
-                        <dd><a href="https://thenounproject.com/term/rooster/42413/">The Noun Project/Yair Cohen</a></dd>
-
-                        <dt>Map Marker</dt>
-                        <dd><a href="https://thenounproject.com/search/?q=map+pin&i=33103/">The Noun Project/Mister Pixel</a></dd>
-                </div>
-
-              </p>
-            </div>
-          </article>
-          <article class="col-md-4 footer-column text-left white-bg">
-              <h3 class="gothic">Connect With Us</h3>
-              <ul class="foot-links">
-                <li><a href="https://twitter.com/theroost"><span>Twitter</span></a></li>
-                <li><a href="https://medium.com/what-the-cluck"><span>Blog</span></a></li>
-                <li><a href="https://instagram.com/theroostcreative"><span>Instagram</span></a></li>
-                <li><a href="https://www.facebook.com/The-Roost-Creative-165840163448967/timeline/"><span>Facebook</span></a></li>
-                <li><a href="mailto:info@theroostcreative.com.au"><span>Email</span></a></li>
-                <li><a href="tel:0249293007"><span>(02) 4929 3007</span></a></li>
-              </ul>
-          </article>
-  </div>
-</footer>
-
-
-
-
-</div>
-<!-- end wrap -->
-
-
-</section>
-<!-- end mast-wrap -->
-
-<!-- Core JS Libraries -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeJ9721j4OcGKondJoHVug7VFgeg1ygx4&sensor=false"></script>
-<script src="/2015/build/main.js"></script>
-</body>
+        <!-- Core JS Libraries -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCeJ9721j4OcGKondJoHVug7VFgeg1ygx4&amp;sensor=false"></script>
+        <script src="/2015/build/main.js"></script>
+    </body>
 </html>

@@ -20,7 +20,7 @@
 
 /*Projector Screens and Ver Large Monitors*/
 @media (min-width: 2561px) {
-	
+
 }
 
 /*iMac 27, HD Screens and Large Monitors*/
@@ -55,20 +55,20 @@
 
 /*iPad Landscape Mode and Large Tablets */
 @media (max-width: 1024px) {
-	
+
 
 }
 
 /*Small Desktop and Very Small Notebook */
 @media (max-width: 980px) {
-	
-	
+
+
 }
 
 /*Medium Tablets */
 @media (max-width: 800px) {
-	
-	
+
+
 	.container{
 		max-width: 800px;
 		padding-left: 20px;
@@ -181,6 +181,16 @@
 	.credits-ticker li{
 		padding: 20px !important;
 	}
+	.home-06-container h1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 101;
+    text-indent: -9999px;
+    left: 0%;
+    background: url(/2015/tagline.svg) no-repeat center center;
+    background-size: contain;
+    }
 }
 
 
@@ -299,13 +309,12 @@
 	.credits-ticker li{
 		padding: 20px !important;
 	}
-	
 }
 
 /*Medium Smart Phones v2*/
 @media screen and (max-width: 640px) {
-	
-	
+
+
 	.container{
 		max-width: 640px;
 		padding-left: 20px;
@@ -420,18 +429,18 @@
 	}
 	.main-logo{
 		width: 100px;
-	} 
+	}
 	.agency-head img{
 		width: 125px;
 	}
-	
+
 }
-	
+
 
 /*Google Nexus and Other Large Smart Phones v1*/
 @media screen and (max-width: 600px) {
-	
-	
+
+
 	.container{
 		max-width: 600px;
 		padding-left: 20px;
@@ -546,18 +555,18 @@
 	}
 	.main-logo{
 		width: 100px;
-	} 
+	}
 	.agency-head img{
 		width: 125px;
 	}
-	
+
 }
-	
+
 
 /*iPhone Landscape Mode and Mediium Smart Phones*/
 @media screen and (max-width: 480px) {
-	
-	
+
+
 	.container{
 		max-width: 480px;
 		padding-left: 20px;
@@ -672,17 +681,17 @@
 	}
 	.main-logo{
 		width: 75px;
-	} 
+	}
 	.agency-head img{
 		width: 100px;
 	}
-	
+
 }
 
 /*Other Major Small Smart Phones*/
 @media screen and (max-width: 360px) {
-	
-	
+
+
 	.container{
 		max-width: 360px;
 		padding-left: 20px;
@@ -797,16 +806,16 @@
 	}
 	.main-logo{
 		width: 75px;
-	} 
+	}
 	.agency-head img{
 		width: 100px;
 	}
-	
+
 }
 
 /*iPhone Portrait Mode and Very Small Mobile Phones*/
 @media screen and (max-width: 320px) {
-	
+
 	.container{
 		max-width: 320px;
 		padding-left: 20px;
@@ -921,7 +930,7 @@
 	}
 	.main-logo{
 		width: 75px;
-	} 
+	}
 	.agency-head img{
 		width: 100px;
 	}

@@ -38,7 +38,7 @@ var roostMembers = [
     },
     {
         "name": "Chris Stonestreet",
-        "title": "Creative Director"
+        "title": "Digital Director"
     },
     {
         "name": "Mark Owens",

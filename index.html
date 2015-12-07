@@ -318,8 +318,16 @@
                                                     <button class="btn btn-reflex btn-reflex-dark" id="submit" type="submit">Send Message</button>
                                                 </div>
                                             </article>
+
                                             <input type="hidden" name="_subject" value="Roost Membership Enquiry">
-                                            <input name="_gotcha" style="display:none">
+
+                                            <div style="height:0;width:0;overflow:hidden">
+                                                <label>
+                                                    Leave these fields blank.
+                                                    <div><input name="_gotcha"></div>
+                                                    <div><input id="gotcha" name="xgotcha"></div>
+                                                </label>
+                                            </div>
 
                                             <p class="alert alert-success success">Your message has been sent. Thank you!</p>
                                             <p class="alert alert-danger error">We could not send your message. Please try again later.</p>

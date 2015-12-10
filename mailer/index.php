@@ -1,6 +1,8 @@
 <?php
 
-require __DIR__.'/composer/autoload.php';
+ini_set('display_errors', 0);
+
+require __DIR__.'/vendor/autoload.php';
 
 function recaptcha($gRecaptchaResponse, $remoteIp)
 {
@@ -35,12 +37,13 @@ function sendmail($post)
 function error()
 {
     header("HTTP/1.1 401 Unauthorized");
+    echo "nah";
     exit();
 }
 
 function success()
 {
-    echo "success";
+    echo "yeah";
     exit();
 }
 

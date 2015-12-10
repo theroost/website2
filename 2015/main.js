@@ -51,7 +51,6 @@
     /** JOIN US **/
     $('#contactForm .success, #contactForm .error').hide();
     $('#contactForm').submit(function() {
-        $('#gotcha').attr('name', '_gotcha');
         $('#contactForm .success, #contactForm .error').hide();
 
         $form = $(this);
@@ -69,11 +68,9 @@
             },
             dataType: "json",
             success: function() {
-                $('#gotcha').attr('name', 'xgotcha');
                 $form.find('.success').fadeIn();
             },
             error: function() {
-                $('#gotcha').attr('name', 'xgotcha');
                 $form.find('.error').fadeIn();
             }
         });

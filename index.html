@@ -56,6 +56,7 @@
             ga('create', 'UA-21821917-1', 'auto', {'name': 'oldTracker'});
             ga('send', 'pageview');
         </script> 
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
     <body class="post">
         <section class="mast-wrap">
@@ -286,7 +287,7 @@
                                     </h2>
     
                                     <div id="contact-form-wrap" class="container">
-                                        <form action="http://formspree.io/info@theroostcreative.com.au" id="contactForm" enctype="multipart/form-data" method="post">
+                                        <form action="/mailer/" id="contactForm" enctype="multipart/form-data" method="post">
                                             <article>
                                                 <input required type="text" placeholder="Name" id="name" name="name" size="100" class="border-form">
                                             </article>
@@ -314,6 +315,9 @@
                                                 </div>
                                             </article>
                                             <article>
+                                                <div class="g-recaptcha" data-sitekey="6LdbmhITAAAAAGem2zDv0gMyqY6CyMUwGWlLAqAl"></div>
+                                            </article>
+                                            <article>
                                                 <div class="btn-wrap  text-left">
                                                     <button class="btn btn-reflex btn-reflex-dark" id="submit" type="submit">Send Message</button>
                                                 </div>
@@ -325,7 +329,6 @@
                                                 <label>
                                                     Leave these fields blank.
                                                     <div><input name="_gotcha"></div>
-                                                    <div><input id="gotcha" name="xgotcha"></div>
                                                 </label>
                                             </div>
 

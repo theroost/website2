@@ -13,7 +13,9 @@ function sendmail($post)
 {
     $client = new \Guzzle\Http\Client('http://formspree.io');
     try { 
-        $client->post('/info@theroostcreative.com.au', array(), array(
+        $response = $client->post('/info@theroostcreative.com.au', array(
+            'Referer' => 'http://theroostcreative.com.au/',
+        ), array(
             'name'       => $post['name'],
             'email'      => $post['email'],
             'phone'      => $post['phone'],
@@ -21,7 +23,7 @@ function sendmail($post)
             'membership' => $post['membership'],
             '_subject'   => $post['_subject'],
             '_gotcha'    => $post['_gotcha'],
-        ));
+        ))->send();
 
         // Assume success?
         return true;

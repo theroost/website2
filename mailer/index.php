@@ -1,7 +1,5 @@
 <?php
 
-ini_set('display_errors', 0);
-
 require __DIR__.'/vendor/autoload.php';
 
 function recaptcha($gRecaptchaResponse, $remoteIp)
@@ -13,47 +11,44 @@ function recaptcha($gRecaptchaResponse, $remoteIp)
 
 function sendmail($post)
 {
-    $client = new \GuzzleHttp\Client();
+    $client = new \Guzzle\Http\Client('http://formspree.io');
     try { 
-        $res = $client->request('POST', 'http://formspree.io/info@theroostcreative.com.au', [
-            'form_params' => [
-                'name'       => $post['name'],
-                'email'      => $post['email'],
-                'phone'      => $post['phone'],
-                'message'    => $post['message'],
-                'membership' => $post['membership'],
-                '_subject'   => $post['subject'],
-                '_gotcha'    => $post['gotcha'],
-            ]
-        ]);
+        $client->post('/info@theroostcreative.com.au', array(), array(
+            'name'       => $post['name'],
+            'email'      => $post['email'],
+            'phone'      => $post['phone'],
+            'message'    => $post['message'],
+            'membership' => $post['membership'],
+            '_subject'   => $post['_subject'],
+            '_gotcha'    => $post['_gotcha'],
+        ));
 
         // Assume success?
         return true;
-    } catch (\GuzzleHttp\Exception\RequestException $e) {
+    } catch (\Guzzle\Http\Exception\BadResponseException $e) {
        return false; 
     }
 }
 
-function error()
+function error($msg)
 {
     header("HTTP/1.1 401 Unauthorized");
-    echo "nah";
+    echo $msg;
     exit();
 }
 
 function success()
 {
-    echo "yeah";
+    echo '{"yeah":"mate"}';
     exit();
 }
 
-if (recaptcha($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess()) {
+if (recaptcha($_POST['g-captcha-response'], $_SERVER['REMOTE_ADDR'])->isSuccess()) {
     if (sendmail($_POST)) {
         success();
     } else {
-        error();
+        error("mail error");
     }
 } else {
-    error();
+    error("captcha error");
 }
-

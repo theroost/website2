@@ -64,7 +64,8 @@
                 message: $('#msg').val(),
                 membership: $form.find('[name=membership]:checked').val(),
                 _gotcha: $form.find('[name=_gotcha]').val(),
-                _subject: $form.find('[name=_subject]').val()
+                _subject: $form.find('[name=_subject]').val(),
+                'g-captcha-response': $('#g-recaptcha-response').val()
             },
             dataType: "json",
             success: function() {

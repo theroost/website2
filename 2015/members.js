@@ -4,11 +4,6 @@ var roostMembers = [
         "title": "Web Application Developer"
     },
     {
-        "name": "Michael McCallum",
-        "title": "Arts Marketing",
-        "url": " http://artsmarketingaustralia.com.au"
-    },
-    {
         "name": "Andy Jones",
         "title": "Video Production"
     },    {
@@ -22,11 +17,6 @@ var roostMembers = [
         "url": "http://www.coffeecavewoman.com"
     },
     {
-        "name": "Sean Bell",
-        "title": "Graphic Designer / #TDKtuesday Newcastle Host",
-        "url": "http://essbeecreative.com.au"
-    },
-    {
         "name": "Bec Dujin",
         "title": "Marketing Strategist & Creative Consultant",
         "url": "http://www.talktobec.com.au"
@@ -35,20 +25,6 @@ var roostMembers = [
         "name": "Adrian Garner",
         "title": "Independent multimedia artist",
         "url": "http://adrian.com.au"
-    },
-    {
-        "name": "Chris Stonestreet",
-        "title": "Digital Director"
-    },
-    {
-        "name": "Mark Owens",
-        "title": "Graphic Designer & Illustrator",
-        "url": "http://www.bananabolt.com"
-    },
-    {
-        "name": "Stephen Babic",
-        "title": "Graphic Designer",
-        "url": "http://missingmouse.com"
     },
     {
         "name": "Justin Aaron",
@@ -60,14 +36,7 @@ var roostMembers = [
         "title": "Portrait Photographer",
         "url": "http://mitchleephoto.com"
     }
-    //,
-
     /*
-    {
-        "name": "Perlin Earth",
-        "title": "Traveller",
-        "url": "http://perlinsadventureblog.com"
-    },
     {
         "name": "Mark Tisdell",
         "title": "Landscape Design / Architecture Design / Urban Design / mudesign.com.au"

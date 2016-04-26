@@ -361,3 +361,7 @@ li.list-group-item.color {
 .venobox:hover .zoom-icon-wrap {
     opacity: 1;
 }
+
+.mail {
+    line-height: 1.5 !important;
+}

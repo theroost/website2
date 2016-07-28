@@ -1,9 +1,5 @@
 var roostMembers = [
     {
-        "name": "Johnson Page",
-        "title": "Web Application Developer"
-    },
-    {
         "name": "Andy Jones",
         "title": "Video Production"
     },  
@@ -65,7 +61,6 @@ var roostMembers = [
         "name": "Thomas Behrendt",
         "title": "Future Energy, Smart Cities & Sustainable Transition"
     },
-    /* Needs photo 
     {
         "name": "Mark Tisdell",
         "title": "Landscape Design / Architecture Design / Urban Design",
@@ -75,9 +70,13 @@ var roostMembers = [
         "name": "Robert Preston",
         "title": "Games Developer"
     },
-    */
     {
         "name": "Josh Stewart",
         "title": "Graphic Designer"
+    },
+    {
+        "name": "Jayden Tramontanas",
+        "title": "Skateboard Enthusiast",
+        "url": "https://www.creativecruisers.com.au/"
     }
 ];

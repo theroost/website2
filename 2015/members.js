@@ -66,10 +66,12 @@ var roostMembers = [
         "title": "Landscape Design / Architecture Design / Urban Design",
         "url": "http://mudesign.com.au"
     },
+    /*
     {
         "name": "Robert Preston",
         "title": "Games Developer"
     },
+    */
     {
         "name": "Josh Stewart",
         "title": "Graphic Designer"

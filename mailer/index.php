@@ -13,7 +13,7 @@ function sendmail($post)
 {
     $client = new \Guzzle\Http\Client('http://formspree.io');
     try { 
-        $response = $client->post('/info@theroostcreative.com.au', array(
+        $response = $client->post('/bec@theroostcreative.com.au', array(
             'Referer' => 'http://theroostcreative.com.au/',
         ), array(
             'name'       => $post['name'],

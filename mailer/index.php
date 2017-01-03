@@ -11,7 +11,7 @@ function recaptcha($gRecaptchaResponse, $remoteIp)
 
 function sendmail($post)
 {
-    $client = new \Guzzle\Http\Client('http://formspree.io');
+    $client = new \GuzzleHttp\Client('http://formspree.io');
     try { 
         $response = $client->post('/bec@theroostcreative.com.au', array(
             'Referer' => 'http://theroostcreative.com.au/',

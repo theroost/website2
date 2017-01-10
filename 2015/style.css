@@ -365,3 +365,8 @@ li.list-group-item.color {
 .mail {
     line-height: 1.5 !important;
 }
+
+.join-content p {
+    line-height: 1.5;
+    font-size: 18px;
+}

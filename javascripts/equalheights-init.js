@@ -16,6 +16,7 @@ $(function ($) {
 		    $('.contact-content-inner').setAllToMaxHeight();
 		    $('.footer-column').setAllToMaxHeight();
 		    $('.about-content').setAllToMaxHeight();
+		    $('.join-content').setAllToMaxHeight();
 		    $('.news-post-inner').setAllToMaxHeight();
 		    $('.error-content-inner').setAllToMaxHeight();
 						

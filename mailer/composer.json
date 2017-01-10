@@ -1,6 +1,0 @@
-{
-    "require": {
-        "google/recaptcha": "~1.1",
-        "guzzle/guzzle": "^3.9"
-    }
-}
